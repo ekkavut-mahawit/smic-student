@@ -1,0 +1,407 @@
+```html
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ระบบติดตามนักเรียนกลุ่มเสี่ยง SMIC MODEL</title>
+
+
+<style>
+
+body{
+
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#fff5f5;
+
+}
+
+
+/* Header สีประจำโรงเรียน */
+
+.header{
+
+    background:linear-gradient(135deg,#991b1b,#dc2626);
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+}
+.logo{
+
+    width:160px;
+    height:160px;
+    object-fit:contain;
+    margin-bottom:10px;
+
+}
+
+
+.header h3{
+
+    margin:10px 0;
+    color:#ffe4e6;
+    font-size:22px;
+    font-weight:normal;
+
+}
+
+/* กล่องรวมระดับชั้น */
+
+.container{
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    padding:20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+/* Card ระดับชั้น */
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px 15px;
+
+    min-height:150px;
+
+    margin-bottom:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    border-top:8px solid #dc2626;
+
+    border-left:none;
+
+    box-shadow:0 5px 15px rgba(153,27,27,.15);
+
+    transition:.2s;
+
+}
+
+/* Card */
+
+.card{
+
+    background:white;
+    border-radius:20px;
+    padding:22px;
+    margin-bottom:20px;
+
+    border-left:8px solid #dc2626;
+
+    box-shadow:0 5px 15px rgba(153,27,27,.15);
+
+    transition:.2s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* Button */
+
+.btn{
+
+    display:block;
+    text-decoration:none;
+    text-align:center;
+
+    margin-top:18px;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    background:#dc2626;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+
+.btn:hover{
+
+    background:#991b1b;
+
+}
+
+
+
+/* Footer */
+
+.footer{
+
+    text-align:center;
+    color:#7f1d1d;
+    margin:40px 20px 20px;
+    font-size:16px;
+
+}
+
+@media(max-width:600px){
+
+    .container{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:12px;
+
+        padding:15px;
+
+    }
+
+
+    .card{
+
+        min-height:130px;
+
+        padding:15px 8px;
+
+    }
+
+
+    .card h2{
+
+        font-size:18px;
+
+    }
+
+
+    .btn{
+
+        font-size:14px;
+
+        padding:10px;
+
+    }
+
+
+}
+.card h2{
+
+    font-size:18px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<div class="header">
+
+
+<img src="logo.png"
+class="logo"
+alt="ตราโรงเรียน">
+
+
+<h1>SMIC MODEL</h1>
+
+
+<h2>🎓 ระบบติดตามนักเรียนกลุ่มเสี่ยงด้านผลการเรียน</h2>
+
+
+<h3>
+งานวัดผล และประเมินผล กลุ่มงานบริหารวิชาการ
+</h3>
+
+
+<p>
+
+ตรวจสอบสถานะการเรียนของตนเอง<br>
+และรายวิชาที่ควรปรับปรุง
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+
+
+
+<div class="card">
+
+<h2 style="color:#16a34a;">
+🟢 ชั้นมัธยมศึกษาปีที่ 1
+</h2>
+
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbySQVJBZt2Q69OSna7GdXLgZuykriHjCSwVzuBUyreKFqvtlKIocZN9WnSs0acFRlA9_A/exec"
+target="_top">
+
+🔎 ตรวจสอบสถานะ ม.1
+
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2 style="color:#0891b2;">
+🔵 ชั้นมัธยมศึกษาปีที่ 2
+</h2>
+
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbznWB0X4XzTm2KlRxA0dAl7-tdT-duFex77rm_WQeha2UONsXlM5kO0WnOUshKds1p8/exec"
+target="_top">
+
+🔎 ตรวจสอบสถานะ ม.2
+
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2 style="color:#7c3aed;">
+🟣 ชั้นมัธยมศึกษาปีที่ 3
+</h2>
+
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbw9mJ6ClBg8dmBXaD-fXaOiWHI6PRXQqJ7BASSnjEAgLjakF_6ri0BT1uq2n492tsZRPA/exec"
+target="_top">
+
+🔎 ตรวจสอบสถานะ ม.3
+
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2 style="color:#ea580c;">
+🟠 ชั้นมัธยมศึกษาปีที่ 4
+</h2>
+
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycby6EIOe9MWwA9hfQBpO9ouckiddnTrXIJ9drVSGaVy8SRGXbmaDwr3GD4StziOoqasulQ/exec"
+target="_top">
+
+🔎 ตรวจสอบสถานะ ม.4
+
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2 style="color:#dc2626;">
+🔴 ชั้นมัธยมศึกษาปีที่ 5
+</h2>
+
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbw1dsR6qJtkWGV1tkI5yFth9Uy5CnftfvUYgls1z5LtObzhP2tN9aTuCMCNTV0nLy3G_g/exec"
+target="_top">
+
+🔎 ตรวจสอบสถานะ ม.5
+
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2 style="color:#475569;">
+⚫ ชั้นมัธยมศึกษาปีที่ 6
+</h2>
+
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbzJXBEzrwZzm51SaFnEKRtr4vZDXdPurK2gTMmOm3T2DK-FgtCO5kbFlMmwNtQARxdb/exec"
+target="_top">
+
+🔎 ตรวจสอบสถานะ ม.6
+
+</a>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div class="footer">
+
+
+งานวัดผลและประเมินผล<br>
+กลุ่มบริหารงานวิชาการ<br>
+โรงเรียนมหาชนะชัยวิทยาคม
+
+
+</div>
+
+
+
+</body>
+
+</html>
+```
